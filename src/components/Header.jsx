@@ -1,12 +1,13 @@
 "use client"
 import profile from "@/assets/images/profile.jpg"
 import Image from "next/image";
-import { Bell, Plus,Search, Play} from "lucide-react";
+import { Bell, Plus,Search, Play, Menu} from "lucide-react";
 export default function Header() {
     return (
     
-            <nav className="flex sticky top-0 backdrop-blur-lg bg-[#0F0F0F]/90 z-2 h-20 text-white w-full gap-2  items-center  justify-between px-2">
-                        <span className="flex place-items-center gap-2 text-white font-bold text-3xl"><Play strokeWidth={4} className="bg-red-500 rounded-full size-10 p-2"/><span className="italic">T</span>ube</span>
+            <nav className="flex sticky top-0 backdrop-blur-lg bg-[#0F0F0F]/90 z-2 h-20 text-white w-full gap-2  items-center  justify-between px-5">
+                        <Menu/>
+                        <span className="flex place-items-center text-white font-bold text-3xl"><Play strokeWidth={4} className="bg-red-500 rounded-full size-10 p-2"/><span className="">You</span>Tube</span>
 
                             <div className="flex relative place-items-center w-1/2">
                                 <input type="text" className="border font-thin border-[#4b4949] h-10 rounded-full px-5 w-full" placeholder="Search"/>

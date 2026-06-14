@@ -15,33 +15,44 @@ export default function VideoCard({
   videoPreview = "",
   videoDuration = "0:00",
 }) {
+  const hasVideo = videoPreview && videoPreview.trim() !== "";
   return (
     // videocard Component
 
     <div className="flex flex-col rounded-xl gap-1 justify-center max-w-xl transtion-all cursor-pointer duration-300 hover:bg-[#141E32] p-2">
-      <Link href={"/videos/preview.mp4"}>
+      <Link href={"#"}>
         <div className="overflow-hidden rounded-xl mb-2 relative">
           <div className="absolute  bg-black/50 rounded-full mb-1 mr-1 flex place-items-center z-2 bottom-0 right-0 px-2">
             <span className="text-xs   font-bold">{videoDuration}</span>
           </div>
-          <HoverVideoPlayer
-            videoSrc={videoPreview}
-            pausedOverlay={
-              <Image
-                className="h-full w-full rounded-xl transition-all duration-300 hover:scale-105 hover:brightness-75"
-                src={thumb}
-                alt="thumbnail video"
-                height={2048}
-                width={2048}></Image>
-            }
-            loadingOverlay={
-              <div className="absolute inset-0 flex items-center justify-center bg-black/50">
-                <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin" />
-              </div>
-            }
-            className="w-full h-full aspect-video"
-            sizingMode="container"
-          />
+          {hasVideo ? (
+            <HoverVideoPlayer
+              videoSrc={videoPreview}
+              pausedOverlay={
+                <Image
+                  className="h-full w-full rounded-xl transition-all duration-300 hover:scale-105 hover:brightness-75"
+                  src={thumb}
+                  alt="thumbnail video"
+                  height={2048}
+                  width={2048}></Image>
+              }
+              loadingOverlay={
+                <div className="absolute inset-0 flex items-center justify-center bg-black/50">
+                  <div className="w-8 h-8 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                </div>
+              }
+              className="w-full h-full aspect-video"
+              sizingMode="container"
+            />
+          ) : (
+            <Image
+              className="h-full w-full rounded-xl transition-all duration-300 hover:scale-105 hover:brightness-75"
+              src={thumb}
+              alt="thumbnail video"
+              height={2048}
+              width={2048}
+            />
+          )}
         </div>
       </Link>
       <div className="flex gap-3">

@@ -19,11 +19,13 @@ export default function VideoCard({
   return (
     // videocard Component
 
-    <div className="flex flex-col rounded-xl gap-1 justify-center max-w-xl transtion-all cursor-pointer duration-300 hover:bg-[#141E32] p-2">
+    <div className="flex flex-col rounded-xl gap-1 group justify-center max-w-xl transtion-all cursor-pointer duration-300 hover:bg-[#141E32] p-2">
       <Link href={"#"}>
         <div className="overflow-hidden rounded-xl mb-2 relative">
-          <div className="absolute  bg-black/50 rounded-full mb-1 mr-1 flex place-items-center z-2 bottom-0 right-0 px-2">
-            <span className="text-xs   font-bold">{videoDuration}</span>
+          <div className="absolute transition-opacity duration-500 group-hover:opacity-0 bg-black/50 rounded-full mb-1 mr-1 flex place-items-center z-2 bottom-0 right-0 px-2">
+            <span id="videoDuration" className="text-xs  font-bold">
+              {videoDuration}
+            </span>
           </div>
           {hasVideo ? (
             <HoverVideoPlayer

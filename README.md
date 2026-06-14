@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+عالی 👌 اطلاعاتت کامل و خوبه، الان برات یه README تمیز و مناسب GitHub می‌نویسم که هم ساده باشه هم حرفه‌ای و قابل توسعه.
 
-## Getting Started
+---
 
-First, run the development server:
+```md
+# 🎬 YouTube Clone (Next.js Practice Project)
+
+A simple YouTube Clone built with **Next.js (App Router)** and **Tailwind CSS** for learning and practicing modern frontend development.
+
+This project is still in development and will be updated with new features over time.
+
+---
+
+## 🎯 Purpose
+
+This project is created for learning and improving skills in:
+
+- React component design
+- Next.js App Router
+- Tailwind CSS styling
+- Data-driven UI development
+- Frontend architecture basics
+
+---
+
+## ⚙️ Tech Stack
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Mock JSON API (local data)
+- next/image
+- react-hover-video-player
+- lucide-react icons
+
+---
+
+## 📦 Features
+
+- 🎥 Video list page (Home)
+- 🧩 Reusable VideoCard component
+- 🖼️ Optimized images with Next.js Image
+- 🎬 Hover video preview on thumbnails
+- 📊 Mock API using JSON data
+- 📱 Responsive grid layout (basic)
+- 🧭 Sidebar (in progress)
+
+---
+
+## 🚧 Missing / In Progress Features
+
+- 🔍 Search functionality
+- ▶️ Watch page (/watch/[id])
+- 💬 Comments section
+- 👍 Like / dislike system
+- 🔐 Authentication
+- 🗄️ Real backend / database integration
+- 📱 Fully responsive UI improvements
+
+---
+
+## 📁 Project Structure
+```
+
+src/
+├── app/
+│ ├── api/
+│ │ └── videos/
+│ ├── watch/
+│ │ └── [id]/
+│ ├── layout.jsx
+│ └── page.jsx
+│
+├── components/
+│ ├── Header.jsx
+│ ├── Sidebar.jsx
+│ └── VideoCard.jsx
+│
+├── data/
+│ └── video.json
+│
+├── assets/
+│ └── styles/
+└── styles/
+
+````
+
+---
+
+## 🚀 Getting Started
+
+Clone the project:
+
+```bash
+git clone <repo-url>
+````
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Notes
 
-To learn more about Next.js, take a look at the following resources:
+This project is not production-ready.
+It is purely for learning and experimenting with frontend development concepts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+More features will be added over time as I continue learning.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [ ] Improve responsive design
+- [ ] Build Watch page
+- [ ] Add search functionality
+- [ ] Improve Sidebar UX
+- [ ] Add loading skeletons
+- [ ] Optimize component structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is open for learning purposes.

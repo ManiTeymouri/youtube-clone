@@ -25,8 +25,6 @@ import {
   TvMinimalPlay,
 } from "lucide-react";
 
-import pfp from "@/assets/images/profile.jpg";
-
 export default function Sidebar() {
   const dashboardSections = [
     [
@@ -36,12 +34,17 @@ export default function Sidebar() {
 
     [
       { title: "Subscriptons", path: "#", icon: false, specialItem: true },
-      { title: "ProgramingWithMani", path: "#", icon: false, profile: pfp },
-      { title: "MehdiGamer", path: "#", icon: false, profile: pfp },
-      { title: "MrBeast", path: "#", icon: false, profile: pfp },
-      { title: "markplier", path: "#", icon: false, profile: pfp },
-      { title: "PewDiePie", path: "#", icon: false, profile: pfp },
-      { title: "BroCode", path: "#", icon: false, profile: pfp },
+      {
+        title: "ProgramingWithMani",
+        path: "#",
+        icon: false,
+        profile: "/images/profiles/profile-1.jpg",
+      },
+      // { title: "MehdiGamer", path: "#", icon: false, profile: pfp },
+      // { title: "MrBeast", path: "#", icon: false, profile: pfp },
+      // { title: "markplier", path: "#", icon: false, profile: pfp },
+      // { title: "PewDiePie", path: "#", icon: false, profile: pfp },
+      // { title: "BroCode", path: "#", icon: false, profile: pfp },
     ],
 
     [
@@ -62,7 +65,9 @@ export default function Sidebar() {
       <div className="grid">
         {dashboardSections.map((section, sectionIndex) => {
           return (
-            <div key={sectionIndex} className="border-t px-2 py-5 h-fit">
+            <div
+              key={sectionIndex}
+              className="border-t border-[#4b4949]  px-2 py-5 h-fit">
               {section.map((link) => {
                 const Icon = link.icon;
                 const profile = link.profile;

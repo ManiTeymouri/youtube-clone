@@ -1,4 +1,4 @@
-import VideoCard from "../components/VideoCard";
+import VideoCard from "@/components/VideoCard.jsx";
 
 async function getVideos() {
   const res = await fetch("http://localhost:3000/api/videos", {
@@ -18,13 +18,14 @@ export default async function Home() {
         return (
           <VideoCard
             key={video.id}
+            id={video.id}
             thumb={video.thumb}
             profile={video.profile}
             username={video.username}
             totalView={video.totalView}
             dateVideo={video.dateVideo}
             title={video.title}
-            videoPreview={video.videoPreview}
+            videoPreview={video.videoUrl}
             videoDuration={video.videoDuration}
           />
         );

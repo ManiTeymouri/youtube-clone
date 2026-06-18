@@ -9,12 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@videojs/react": "^10.0.0-beta.24",
     "lucide": "^1.17.0",
     "lucide-react": "^1.17.0",
-    "next": "16.2.9",
+    "next": "^15.4.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-hover-video-player": "^10.0.2"
+    "react-hover-video-player": "^10.0.2",
+    "react-player": "^3.4.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

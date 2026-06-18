@@ -1,5 +1,4 @@
 "use client";
-import Skeleton from "./Skeleton.jsx";
 import { MyPlayer } from "./player";
 import Image from "next/image.js";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
